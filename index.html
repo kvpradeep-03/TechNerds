@@ -13,7 +13,9 @@
     <!--px-3, =>padding applies to X-axis(both top & bottom)--> <!--ps-3, =>padding applies to starting portion-->
     <!--py-3. =>padding applies to Y-axis(both top & bottom)--> <!--pe-3, =>padding applied to ending portion-->
     <!--pt-3, =>padding top 3 pixels--> <!--pb-3, =>padding bottom 3 pixels-->
-    <header class="p-3 bg-dark text-white"> 
+    
+    <!--header-Navbar-->
+    <header class="p-3 bg-dark text-white sticky-top"> 
         <div class="row">
             <div class="col">
                 <p class="h1">TechNerds</p>
@@ -29,44 +31,152 @@
             </div>
         </div>
     </header>
-    <div class="container py-3 mb-3">
-        <p class="display-6 m-5">Hey Buddy!</p> 
+    <!--Blog posts-->
+    <!--Greet card-->
+    <div class="container py-3 mb-3 mt-3">
+        <div class="card bg-dark text-white">
+            <div class="card-body">
+                <!--card-title which specifies a title of a card,and card-text provides like sub text of the heading-->
+                <p class="card-title display-6 m-2">Hey Buddy!</p> 
+                <p class="card-text ms-2"> >Here you can view all posts.</p>
+            </div>
+        </div>
+        <p class=""></p> 
         <div class="row">
             <!--col-12 ,takes all the col's in a container(12 col's -> {col-1 = 1 container}) || This works in mobile screen-->
             <!--col-md-4 ,md-medium device(tab's & laptop's screen resolution , etc..)when a screen resolution increases to medium device's resolution this will  conflict -->
-            <!--col-sm-6,sm-small device(mobile in landscape mode)-->
-            <div class="col-12 col-sm-6 col-md-4"> 
-                <p class="h1 mb-3">Post Title 1</p>
-                <p>Date: Mar 10,2024</p>
-                <p>This is the content of post 1</p>
+            <!--col-sm-6,sm-small device(mobile and mobile in landscape mode)-->
+
+            <!--This img-fluid gives a responsive layout for imgs,which takes the resolution of parent class-->
+            <!--`rounded`=>gives a rounded border-->
+            <!--This `card` gives a layout for a post, `card-body provides like description space for the content` -->
+           
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4"> <!--[generally 12 cols in a grid ] in that => mobile default col-12(1-post in a screen) , mobile in landscape col-sm-6(2 post in a screen) , tablet(col-md-4)(3 postes in a screen) , pc's(col-lg-3)(4 postes in a screen)-->
+                <div class="card">
+                    <div class="row">
+                        <div class="col-6 col-sm-12">
+                            <img class="img-fluid rounded h-100 w-100" src="https://picsum.photos/300/200" alt="">
+                        </div>
+                        <div class="col-6 col-sm-12"> <!--in mobile(potrait) it takes one postes in landscape it takes full col in a row[so as usual 4 postes as specified in parent] -->
+                            <div class="card-body">
+                                <p class="h1 mb-3">Post Title 1</p>
+                                <p>Date: Mar 10,2024</p>
+                                <p>This is the content of post 1</p>
+                            </div>      
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
-                <p class="h1 mb-3">Post Title 2</p>
-                <p>Date: Mar 10,2024</p>
-                <p>This is the content of post 2</p>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-6 col-sm-12">
+                            <img class="img-fluid rounded h-100 w-100" src="https://picsum.photos/300/200" alt="">
+                        </div>
+                        <div class="col-6 col-sm-12">
+                            <div class="card-body">
+                                <p class="h1 mb-3">Post Title 2</p>
+                                <p>Date: Mar 10,2024</p>
+                                <p>This is the content of post 2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>          
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
-                <p class="h1 mb-3">Post Title 3</p>
-                <p>Date: Mar 10,2024</p>
-                <p>This is the content of post 3</p>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-6 col-sm-12">
+                            <img class="img-fluid rounded h-100 w-100" src="https://picsum.photos/300/200" alt="">
+                        </div>
+                        <div class="col-6 col-sm-12">
+                            <div class="card-body">
+                                <p class="h1 mb-3">Post Title 3</p>
+                                <p>Date: Mar 10,2024</p>
+                                <p>This is the content of post 3</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>   
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-6 col-sm-12">
+                            <img class="img-fluid rounded h-100 w-100" src="https://picsum.photos/300/200" alt="">
+                        </div>
+                        <div class="col-6 col-sm-12">
+                            <div class="card-body">
+                                <p class="h1 mb-3">Post Title 4</p>
+                                <p>Date: Mar 10,2024</p>
+                                <p>This is the content of post 4</p>
+                            </div>                           
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
-                <p class="h1 mb-3">Post Title 1</p>
-                <p>Date: Mar 10,2024</p>
-                <p>This is the content of post 1</p>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-6 col-sm-12">
+                            <img class="img-fluid rounded h-100 w-100" src="https://picsum.photos/300/200" alt="">
+                        </div>
+                        <div class="col-6 col-sm-12">
+                            <div class="card-body">
+                                <p class="h1 mb-3">Post Title 5</p>
+                                <p>Date: Mar 10,2024</p>
+                                <p>This is the content of post 5</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
-                <p class="h1 mb-3">Post Title 2</p>
-                <p>Date: Mar 10,2024</p>
-                <p>This is the content of post 2</p>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4">
-                <p class="h1 mb-3">Post Title 3</p>
-                <p>Date: Mar 10,2024</p>
-                <p>This is the content of post 3</p>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-6 col-sm-12">
+                            <img class="img-fluid rounded h-100 w-100" src="https://picsum.photos/300/200" alt="">
+                        </div>
+                        <div class="col-6 col-sm-12">
+                            <div class="card-body">
+                                <p class="h1 mb-3">Post Title 6</p>
+                                <p>Date: Mar 10,2024</p>
+                                <p>This is the content of post 6</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <!--Contact form-->
+        <div class="container bg-dark text-white mb-5 rounded p-3">
+            <div class="row">
+                <div class="col-12 col-lg-6  p-3"> <!--col-lg => col of large devices(desktop or laptop ,TV's etc..)-->
+                    <h2>Contact Form</h2>
+                    <form action="">
+                        <!--form-group creates the contents into groups(alignment) & form-control causes perfect alignment of inputfields -->
+        
+                        <div class="form-group">
+                            <label for="">Name</label>
+                            <input type="text" class="form-control" name="" id="">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Email Address</label>
+                            <input type="email" class="form-control" name="" id="">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Message</label>
+                            <textarea name="" class="form-control" id="" cols="30" rows="10"></textarea>
+                        </div>
+                        <button class="btn btn-primary mt-2">Submit</button> <!--bootstraps button class for buttons-->
+                    </form>
+                </div>
+
+            </div>
+        </div>
+ 
+        <!--Footer part-->
     <footer class="p-3 bg-dark">
         <div class="row">
             <div class="col">
